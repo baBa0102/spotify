@@ -21,6 +21,7 @@ body{
     .sidebar{
         display: none;
     }
+    
 }
 
 .main-content{
@@ -165,10 +166,31 @@ a{
 .sticky-nav-options button{
     margin-right:1rem ;
 }
+.open-slidebar-icon{
+    display: none;
+}
 @media(max-width:1000px){
     .hide{
         display: none;
     }
+    .open-slidebar-icon{
+        opacity: 0.8;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .open-slidebar-icon:hover{
+        opacity: 1;
+    }
+    #forward-icon{
+        margin-left: 1rem;
+    }
+    .sticky-nav-icons{
+        display: flex;
+    }
+    
+
 }
 .card{
     width: 150px;
