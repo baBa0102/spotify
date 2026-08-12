@@ -17,6 +17,12 @@ body{
     margin-right: 0.5rem;
 
 }
+@media(max-width:1000px){
+    .sidebar{
+        display: none;
+    }
+}
+
 .main-content{
     background-color: #121212;
     flex: 1;
@@ -284,4 +290,27 @@ a{
 }
 .player-control-right{
     width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-items: center; */
+    align-items: center;
+}
+.player-controls-right-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#player-control-volume{
+    /* appearance: none; */
+    height: 0.2rem;
+    width: 40%;
+}
+#player-control-volume::-webkit-slider-runnable-track{
+    /* appearance: none; */
+    color: #1bd760;
+}
+#player-control-volume::-webkit-slider-thumb{
+    color: #1bd760;
 }
