@@ -55,18 +55,96 @@
         <div class="main-content">
             <div class="sticky-nav">
                 <div class="sticky-nav-icons">
-                    <img src="./assets/backward_icon.png" alt="backward-icon">
+                    <img class = "hide" src="./assets/backward_icon.png" alt="backward-icon">
                     <img src="./assets/forward_icon.png" alt="forward-icon">
                 </div>
                 <div class="sticky-nav-options">
-                    <button class="badge">Explore Premium</button>
+                    <button class="badge hide">Explore Premium</button>
                     <button class="badge dark-badge"><i class="fa-regular fa-circle-down"></i> Install App</button>
                     <i class="fa-regular fa-user"></i>
+                </div>              
+            </div>
+
+            <h2>Recently played</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" alt="card image">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks...</p>
                 </div>
-                
+            </div>
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card2img.jpeg" alt="card image">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card3img.jpeg" alt="card image">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card4img.jpeg" alt="card image">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" alt="card image">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks...</p>
+                </div>
+            </div>
+            <h2>Featured charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card5img.jpeg" alt="card image">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card6img.jpeg" alt="card image">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" alt="card image">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks...</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
             </div>
         </div>
-        <div class="music-player">music</div>
+        
+        </div>
+        <div class="music-player">
+            <div class="player-controls-left">
+                <img src="./assets/music-album-img.png" alt="music-album-img">
+                <div class="song-details">
+                    <p1 class="song-title">Tabaahi-From "Toxic"</p1>
+                    <p2 class="song-info">Vishal Mishra, Raj Shekhar</p2>
+                </div>
+                <div class="player-control-left-icon"><i class="fa-solid fa-circle-plus"></i></div>
+            </div>
+            <div class="player">
+                <div class="player-control">
+                    <img src="./assets/player_icon1.png" alt="icon" class="player-control-icon">
+                    <img src="./assets/player_icon2.png" alt="icon" class="player-control-icon">
+                    <img src="./assets/player_icon3.png" alt="icon" class="player-control-icon" style="height: 2rem; opacity: 1;">
+                    <img src="./assets/player_icon4.png" alt="icon" class="player-control-icon">
+                    <img src="./assets/player_icon5.png" alt="icon" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="current-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar">
+                    <span class="total-time">03:33</span>
+                </div>
+            </div>
+            <div class="player-controls-right"></div>
+        </div>
     </div>
 </body>
 </html>
