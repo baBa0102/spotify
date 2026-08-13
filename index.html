@@ -55,9 +55,21 @@
         <div class="main-content">
             <div class="sticky-nav">
                 <div class="sticky-nav-icons">
-                    <img class = "hide" src="./assets/backward_icon.png" alt="backward-icon" >
-                    <div class="open-slidebar-icon"><i class="fa-solid fa-house"></i></div>
-                    <img src="./assets/forward_icon.png" alt="forward-icon" class="open-sidebar" id="forward-icon">
+                    <input type="checkbox" id="backward-icon-check">
+                    <div class="backward-icon">
+                        <label for="backward-icon-check">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </label>
+                    </div>
+                    <!-- <img class = "hide" src="./assets/backward_icon.png" alt="backward-icon" > -->
+                    <div class="open-sidebar-icon"><i class="fa-solid fa-house"></i></div>
+                    <!-- <div class="open-sidebar" id="forward-icon"><i class="fa-solid fa-chevron-right"></i></div> -->
+                     <input type="checkbox" id="forward-icon-check">
+                     <div class="forward-icon">
+                        <label for="forward-icon-check">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </label>
+                    </div>
                 </div>
                 <div class="sticky-nav-options">
                     <button class="badge hide">Explore Premium</button>

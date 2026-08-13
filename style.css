@@ -157,6 +157,7 @@ a{
 }
 .sticky-nav-icons{
     margin-left: 0.75rem;
+    display: flex;
 }
 .sticky-nav-options{
     display: flex;
@@ -166,7 +167,20 @@ a{
 .sticky-nav-options button{
     margin-right:1rem ;
 }
-.open-slidebar-icon{
+.open-sidebar-icon{
+    display: none;
+}
+#backward-icon-check{
+    display: none;
+}
+#forward-icon-check{
+    display: none;
+}
+.backward-icon{
+    font-size: 1.8rem;
+}
+.forward-icon{
+    font-size: 1.8rem;
     display: none;
 }
 @media(max-width:1000px){
@@ -183,11 +197,15 @@ a{
     .open-slidebar-icon:hover{
         opacity: 1;
     }
-    #forward-icon{
+    .forward-icon{
         margin-left: 1rem;
+        display: flex;
     }
     .sticky-nav-icons{
         display: flex;
+    }
+    .backward-icon{
+        display: none;
     }
     
 
