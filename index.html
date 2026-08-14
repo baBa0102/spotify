@@ -15,6 +15,19 @@
 </head>
 <body>
     <div class="main">
+        <input type="checkbox" id="backward-icon-check">
+        <div class="backward-icon">
+             <label for="backward-icon-check">
+                <i class="fa-solid fa-angle-left"></i>
+              </label>
+        </div>
+        <input type="checkbox" id="forward-icon-check">
+        <div class="forward-icon">
+            <label for="forward-icon-check">
+                <i class="fa-solid fa-angle-right"></i>
+            </label>
+        </div>        
+        <!-- backward/forward-icon-check belongs to backward/forward-icon class, to make sibling relation they are placed here -->
         <div class="sidebar">
             <div class="navbar">
                 <div class="nav-option" style="opacity: 1;">
@@ -55,21 +68,11 @@
         <div class="main-content">
             <div class="sticky-nav">
                 <div class="sticky-nav-icons">
-                    <input type="checkbox" id="backward-icon-check">
-                    <div class="backward-icon">
-                        <label for="backward-icon-check">
-                            <i class="fa-solid fa-angle-left"></i>
-                        </label>
-                    </div>
+                    <!-- <input type="checkbox" id="backward-icon-check"> -->
                     <!-- <img class = "hide" src="./assets/backward_icon.png" alt="backward-icon" > -->
                     <div class="open-sidebar-icon"><i class="fa-solid fa-house"></i></div>
                     <!-- <div class="open-sidebar" id="forward-icon"><i class="fa-solid fa-chevron-right"></i></div> -->
-                     <input type="checkbox" id="forward-icon-check">
-                     <div class="forward-icon">
-                        <label for="forward-icon-check">
-                            <i class="fa-solid fa-angle-right"></i>
-                        </label>
-                    </div>
+                     <!-- <input type="checkbox" id="forward-icon-check"> -->
                 </div>
                 <div class="sticky-nav-options">
                     <button class="badge hide">Explore Premium</button>
@@ -167,6 +170,5 @@
                 </div>
             </div>
         </div>
-    </div>
 </body>
 </html>

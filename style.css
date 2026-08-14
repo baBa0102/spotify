@@ -11,17 +11,15 @@ body{
 
 }
 .sidebar{
+    position: fixed;
+    left: -350px;
+    height: 90vh;
+    z-index: 2;
     background-color: black;
     border-radius: 1rem;
     width: 340px;
     margin-right: 0.5rem;
 
-}
-@media(max-width:1000px){
-    .sidebar{
-        display: none;
-    }
-    
 }
 
 .main-content{
@@ -33,6 +31,7 @@ body{
 
 }
 .music-player{
+    z-index: 3;
     background-color: #000;
     position: fixed;
     bottom: 0;
@@ -173,9 +172,21 @@ a{
 #backward-icon-check{
     display: none;
 }
+#backward-icon-check:checked ~.sidebar{
+    left: 0;
+    z-index: 3;
+
+}
 #forward-icon-check{
     display: none;
 }
+ #forward-icon-check:checked ~ .sidebar{
+    left: 0;
+    z-index: 3;
+ }
+ #forward-icon-check:checked ~.forward-icon{
+    display: none;
+ }
 .backward-icon{
     font-size: 1.8rem;
 }
@@ -207,6 +218,9 @@ a{
     .backward-icon{
         display: none;
     }
+     /* .sidebar{
+        display: none;
+    } */
     
 
 }
